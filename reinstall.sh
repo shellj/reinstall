@@ -3,8 +3,8 @@
 # shellcheck disable=SC2086
 
 set -eE
-confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
-confhome_cn=https://cnb.cool/bin456789/reinstall/-/git/raw/main
+confhome=https://raw.githubusercontent.com/shellj/reinstall/main
+confhome_cn=https://git.fangyou.com/xiejun/reinstall/raw/main
 # confhome_cn=https://www.ghproxy.cc/https://raw.githubusercontent.com/bin456789/reinstall/main
 
 # 默认密码

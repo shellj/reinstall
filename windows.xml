@@ -3,6 +3,9 @@
 
     <settings pass="windowsPE">
         <component name="Microsoft-Windows-Setup" processorArchitecture="%arch%" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <DiskConfiguration>
+                <WillShowUI>Always</WillShowUI>
+            </DiskConfiguration>
             <!-- 安装过程可节省一点内存？vista 要删除不然报错 -->
             <EnableFirewall>false</EnableFirewall>
             <UserData>
@@ -19,10 +22,10 @@
                             <Value>%image_name%</Value>
                         </MetaData>
                     </InstallFrom>
-                    <InstallTo>
+                    <!-- <InstallTo>
                         <DiskID>%disk_id%</DiskID>
                         <PartitionID>%installto_partitionid%</PartitionID>
-                    </InstallTo>
+                    </InstallTo> -->
                 </OSImage>
             </ImageInstall>
             <!-- 用注册表无法绕过 cpu 核数限制 -->
